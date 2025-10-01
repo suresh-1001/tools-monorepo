@@ -1,0 +1,82 @@
+=== Windows Auto-Debug + Self-Heal (ASCII-safe) ===
+Host: WIN-SERVER01  |  Time (UTC): 2025-10-01T15:42:18Z
+------------------------------------------------------------
+Detected OS: Microsoft Windows Server 2022 Datacenter (Build 20348.2614)
+------------------------------------------------------------
+
+[System] Uptime
+12 days 04:16:07
+[Explanation] Shows how long the system has been running since last reboot.
+
+------------------------------------------------------------
+[System] CPU/Memory top offenders (top 10)
+
+Name        Id   CPU(s)   WorkingSet(MB)
+----        --   ------   --------------
+sqlservr    2016  1520    1432
+chrome      5028   520     832
+svchost     1244   311     246
+explorer    3420   280     185
+dwm         2988   245     140
+...
+
+[Explanation] Processes using most CPU and RAM. Watch for runaway tasks.
+
+------------------------------------------------------------
+[Memory]
+TotalGB : 32
+FreeGB  : 18
+UsedGB  : 14
+FreePct : 56
+[Explanation] Total/used/available memory.
+
+------------------------------------------------------------
+[Disk] Volumes
+Drive C:  NTFS  Size: 255 GB  Free: 140 GB  Used: 45%
+Drive D:  NTFS  Size: 500 GB  Free: 312 GB  Used: 38%
+[Explanation] Disk usage by volume.
+
+------------------------------------------------------------
+[Services] Automatic services that are stopped
+None
+[Explanation] Auto-start services that aren't running can explain outages.
+
+------------------------------------------------------------
+[Logs] Recent errors (last 24h) - System
+09/30/2025 10:42:37  ID:20  WindowsUpdateClient  Installation Failure: Update KB5021234 failed.
+09/30/2025 07:33:35  ID:10001 DistributedCOM     Unable to start a DCOM Server.
+
+[Logs] Recent errors (last 24h) - Application
+None critical.
+
+------------------------------------------------------------
+[DNS] Server addresses per interface
+Ethernet0     {1.1.1.1, 8.8.8.8}
+
+------------------------------------------------------------
+[Time] w32time status
+Clock synchronized. Source: time.windows.com,0x9
+
+------------------------------------------------------------
+[Security] Microsoft Defender status (summary)
+AntivirusEnabled       : True
+RealTimeProtection     : True
+SignatureAgeHours      : 2
+QuickScanAgeHours      : 48
+
+------------------------------------------------------------
+[Disk] Biggest temp files
+C:\Windows\Temp\temp1.tmp   220 MB
+C:\Users\Admin\AppData\Local\Temp\cache.bin   130 MB
+
+------------------------------------------------------------
+============================================================
+[Final Summary]
+- [OK] CPU load looks normal (12%).
+- [OK] Memory is healthy (18 GB available).
+- [OK] Disk usage on C: looks safe (45% used).
+- [OK] No pending reboot detected.
+- [OK] Windows Time service is running.
+
+[Verdict] Overall system health looks stable unless flagged above.
+============================================================

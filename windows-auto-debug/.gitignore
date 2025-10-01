@@ -1,0 +1,22 @@
+# Logs and reports
+*.log
+*.txt
+*.csv
+*.evtx
+
+# PowerShell transcripts
+*.clixml
+*.trn
+
+# Windows junk
+Thumbs.db
+Desktop.ini
+
+# Archives
+*.zip
+*.7z
+*.tar
+*.gz
+
+# allow example transcripts
+!examples/*.txt
