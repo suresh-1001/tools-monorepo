@@ -40,3 +40,15 @@ This monorepo replaces the individual repositories:
 - `linux-auto-debug` → now lives in `/linux-auto-debug`
 
 The original repos may be archived with a notice that points here.
+
+
+## Artifacts
+- `/docs/` step-by-step with screenshots
+- `/scripts/` repeatable automation
+- `/dashboards/` sample JSON/PBIX (if relevant)
+- `/templates/` redacted policies/SOPs
+
+---
+**Contact**  
+- Email: **suresh@echand.com**  
+- LinkedIn: **linkedin.com/in/sureshchand01**
